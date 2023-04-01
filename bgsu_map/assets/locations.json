@@ -1,0 +1,26 @@
+{   
+    "buildings": 
+        [
+            {"address": "HayesHall", "id": "hayes", "image": "", "lat": 41.377925, "lng": -83.639979, "name": "Hayes Hall", "phone": "", "region": "north-america"},
+            {"address": "BTSU", "id": "btsu", "image": "", "lat": 41.377455, "lng": -83.642559, "name": "BTSU", "phone": "", "region": "north-america"},
+            {"address": "Shatzel_Hall", "id": "shatzel", "image": "", "lat": 41.376327, "lng": -83.641806, "name": "Shatzel Hall", "phone": "", "region": "north-america"},
+            {"address": "FoundersHall", "id": "founders", "image": "", "lat": 41.375353, "lng": -83.641806, "name": "Founders Hall", "phone": "", "region": "north-america"},
+            {"address": "McFallCenter", "id": "mcfall", "image": "", "lat": 41.375654, "lng": -83.640965, "name": "McFall Center", "phone": "", "region": "north-america"},
+            {"address": "KuhlinCenter", "id": "kuhlin", "image": "", "lat": 41.375126, "lng": -83.640155, "name": "Kuhlin Center", "phone": "", "region": "north-america"},
+            {"address": "MaurerCenter", "id": "maurer", "image": "", "lat": 41.375182, "lng": -83.639148, "name": "Maurer Center", "phone": "", "region": "north-america"},
+            {"address": "CarillonHall", "id": "carillon", "image": "", "lat": 41.375662, "lng": -83.637580, "name": "Carillon Hall", "phone": "", "region": "north-america"},
+            {"address": "EastHall", "id": "east", "image": "", "lat": 41.376247, "lng": -83.636846, "name": "East Hall", "phone": "", "region": "north-america"},
+            {"address": "CentralHall", "id": "central", "image": "", "lat": 41.376795, "lng": -83.637400, "name": "Central Hall", "phone": "", "region": "north-america"},
+            {"address": "EducationBuilding", "id": "education", "image": "", "lat": 41.376763, "lng": -83.638251, "name": "Education Building", "phone": "", "region": "north-america"},
+            {"address": "OlscampHall", "id": "olscamp", "image": "", "lat": 41.377968, "lng": -83.637480, "name": "Olscamp Hall", "phone": "", "region": "north-america"}
+        ],
+    "regions": 
+        [
+            {"coords": {"lat": 2.9660291, "lng": 1.3271339}, "id": "africa-middle-east", "name": "Africa & Middle East", "zoom": 3.0},
+            {"coords": {"lat": 0.0524811, "lng": 127.6560787}, "id": "asia-pacific", "name": "Asia Pacific", "zoom": 3.0},
+            {"coords": {"lat": 46.1352815, "lng": 7.4033438}, "id": "europe", "name": "Europe", "zoom": 4.0},
+            {"coords": {"lat": -17.5554497, "lng": -99.2316195}, "id": "latin-america", "name": "Latin America", "zoom": 3.0},
+            {"coords": {"lat": 45.7128252, "lng": -97.1547448}, "id": "north-america", "name": "North America", "zoom": 4.0}
+        ]
+}
+
