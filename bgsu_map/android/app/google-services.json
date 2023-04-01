@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "891827822894",
+    "project_id": "bgsu-map",
+    "storage_bucket": "bgsu-map.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891827822894:android:2427f95b903d2fd97d5abf",
+        "android_client_info": {
+          "package_name": "com.example.bgsu_map"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891827822894-qe8jugebde4v8bs56jpmpp2r6na4dr4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBodYs6EMbg9iCPaQeXIezQ-a5zi2K53EE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891827822894-qe8jugebde4v8bs56jpmpp2r6na4dr4l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "891827822894-bi5mjo1j2idifdjlgeaa67ona1pnnvks.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bgsuMap"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
