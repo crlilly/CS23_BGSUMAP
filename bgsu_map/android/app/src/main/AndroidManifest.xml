@@ -1,6 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bgsu_map">
-   <application
+
+
+    <!-- Add permissions to the application to allow it to read files or take photos -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Add permission for location to the application -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <application
         android:label="bgsu_map"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
