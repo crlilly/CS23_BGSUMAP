@@ -20,6 +20,17 @@ Future<List<String>> extractData() async {
         .children[0]
         .children;
 
+    var eventTitle;
+    var eventLoc;
+    var eventDateTime;
+
+    for (var event in events) {
+      eventTitle = event.children[1]
+          .getElementsByClassName('em-card_title')[0]
+          .getElementsByTagName('a')[0]
+          .innerHtml;
+    }
+
     try {} catch (e) {
       return ['', '', 'ERROR!'];
     }
