@@ -83,7 +83,7 @@ flutter:
   fonts:
     - family: Alkatra
       fonts:
-        - asset: Alkatra-Regular.ttf
+        - asset: assets/Alkatra-Regular.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
