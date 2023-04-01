@@ -1,18 +1,18 @@
 {   
     "buildings": 
         [
-            {"address": "HayesHall", "id": "hayes", "image": "Hayes_Hall.jpg", "lat": 41.377925, "lng": -83.639979, "name": "Hayes Hall", "phone": "", "region": "north-america"},
-            {"address": "BTSU", "id": "btsu", "image": "BTSU.jpg", "lat": 41.377455, "lng": -83.642559, "name": "BTSU", "phone": "", "region": "north-america"},
-            {"address": "Shatzel_Hall", "id": "shatzel", "image": "Shatzel_Hall.jpg", "lat": 41.376327, "lng": -83.641806, "name": "Shatzel Hall", "phone": "", "region": "north-america"},
-            {"address": "FoundersHall", "id": "founders", "image": "Founders_Hall.jpg", "lat": 41.375353, "lng": -83.641806, "name": "Founders Hall", "phone": "", "region": "north-america"},
-            {"address": "McFallCenter", "id": "mcfall", "image": "McFall_Center.jpg", "lat": 41.375654, "lng": -83.640965, "name": "McFall Center", "phone": "", "region": "north-america"},
-            {"address": "KuhlinCenter", "id": "kuhlin", "image": "Kuhlin_Ceter.jpg", "lat": 41.375126, "lng": -83.640155, "name": "Kuhlin Center", "phone": "", "region": "north-america"},
-            {"address": "MaurerCenter", "id": "maurer", "image": "Maurer_Center.jpg", "lat": 41.375182, "lng": -83.639148, "name": "Maurer Center", "phone": "", "region": "north-america"},
-            {"address": "CarillonHall", "id": "carillon", "image": "Carillon_Hall.jpg", "lat": 41.375662, "lng": -83.637580, "name": "Carillon Hall", "phone": "", "region": "north-america"},
-            {"address": "EastHall", "id": "east", "image": "East_Hall.jpg", "lat": 41.376247, "lng": -83.636846, "name": "East Hall", "phone": "", "region": "north-america"},
-            {"address": "CentralHall", "id": "central", "image": "Central_Hall.jpg", "lat": 41.376795, "lng": -83.637400, "name": "Central Hall", "phone": "", "region": "north-america"},
-            {"address": "EducationBuilding", "id": "education", "image": "Education_Building.jpg", "lat": 41.376763, "lng": -83.638251, "name": "Education Building", "phone": "", "region": "north-america"},
-            {"address": "OlscampHall", "id": "olscamp", "image": "Olscamp_Hall.jpg", "lat": 41.377968, "lng": -83.637480, "name": "Olscamp Hall", "phone": "", "region": "north-america"}
+            {"address": "HayesHall", "id": "hayes", "image": "assets/images/Hayes_Hall.jpg", "lat": 41.377925, "lng": -83.639979, "name": "Hayes Hall", "phone": "", "region": "north-america"},
+            {"address": "BTSU", "id": "btsu", "image": "assets/images/BTSU.jpg", "lat": 41.377455, "lng": -83.642559, "name": "BTSU", "phone": "", "region": "north-america"},
+            {"address": "Shatzel_Hall", "id": "shatzel", "image": "assets/images/Shatzel_Hall.jpg", "lat": 41.376327, "lng": -83.641806, "name": "Shatzel Hall", "phone": "", "region": "north-america"},
+            {"address": "FoundersHall", "id": "founders", "image": "assets/images/Founders_Hall.jpg", "lat": 41.375353, "lng": -83.641806, "name": "Founders Hall", "phone": "", "region": "north-america"},
+            {"address": "McFallCenter", "id": "mcfall", "image": "assets/images/McFall_Center.jpg", "lat": 41.375654, "lng": -83.640965, "name": "McFall Center", "phone": "", "region": "north-america"},
+            {"address": "KuhlinCenter", "id": "kuhlin", "image": "assets/images/Kuhlin_Ceter.jpg", "lat": 41.375126, "lng": -83.640155, "name": "Kuhlin Center", "phone": "", "region": "north-america"},
+            {"address": "MaurerCenter", "id": "maurer", "image": "assets/images/Maurer_Center.jpg", "lat": 41.375182, "lng": -83.639148, "name": "Maurer Center", "phone": "", "region": "north-america"},
+            {"address": "CarillonHall", "id": "carillon", "image": "assets/images/Carillon_Hall.jpg", "lat": 41.375662, "lng": -83.637580, "name": "Carillon Hall", "phone": "", "region": "north-america"},
+            {"address": "EastHall", "id": "east", "image": "assets/images/East_Hall.jpg", "lat": 41.376247, "lng": -83.636846, "name": "East Hall", "phone": "", "region": "north-america"},
+            {"address": "CentralHall", "id": "central", "image": "assets/images/Central_Hall.jpg", "lat": 41.376795, "lng": -83.637400, "name": "Central Hall", "phone": "", "region": "north-america"},
+            {"address": "EducationBuilding", "id": "education", "image": "assets/images/Education_Building.jpg", "lat": 41.376763, "lng": -83.638251, "name": "Education Building", "phone": "", "region": "north-america"},
+            {"address": "OlscampHall", "id": "olscamp", "image": "assets/images/Olscamp_Hall.jpg", "lat": 41.377968, "lng": -83.637480, "name": "Olscamp Hall", "phone": "", "region": "north-america"}
         ],
     "regions": 
         [

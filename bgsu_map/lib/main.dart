@@ -4,7 +4,13 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'src/locations.dart' as locations;
 
-void main() => runApp(const MyApp());
+void main() async {
+
+  runApp(const MyApp());
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+}
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -15,21 +21,25 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
+  BitmapDescriptor icon = BitmapDescriptor.defaultMarker;
   final Map<String, Marker> _markers = {};
   Future<void> _onMapCreated(GoogleMapController controller) async {
     final mapItems = await locations.getEvents();
     setState(() {
       _markers.clear();
       for (final building in mapItems.buildings) {
+        BitmapDescriptor.fromAssetImage(
+          ImageConfiguration(), '${building.image}'.then((value) => icon = value);
         final marker = Marker(
           markerId: MarkerId(building.name),
           position: LatLng(building.lat, building.lng),
+          icon: icon,
           infoWindow: InfoWindow(
             title: building.name,
             snippet: building.address,
-          ),
+          ),  
         );
+        Image.asset(building.image);
         _markers[building.name] = marker;
       }
     });
@@ -51,7 +61,7 @@ class _MyAppState extends State<MyApp> {
           onMapCreated: _onMapCreated,
           initialCameraPosition: const CameraPosition(
             target: LatLng(41.377925, -83.639979),
-            zoom: 14,
+            zoom: 16,
           ),
           markers: _markers.values.toSet(),
         ),
