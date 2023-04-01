@@ -24,6 +24,7 @@ Future<List<String>> extractData() async {
     var eventLoc;
     var eventDateTime;
 
+    //get event name
     for (var event in events) {
       eventTitle = event.children[1]
           .getElementsByClassName('em-card_title')[0]
