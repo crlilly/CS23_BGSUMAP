@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'webScraper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'src/locations.dart' as locations;
@@ -55,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Bowling Green State University Buildings'),
+          title: const Text('Falcon Finder'),
           elevation: 2,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -63,6 +62,7 @@ class _MyAppState extends State<MyApp> {
               bottomRight: Radius.circular(25),
           ),
         ),
+          backgroundColor: Colors.orange,
         ),
         body: GoogleMap(
           onMapCreated: _onMapCreated,
