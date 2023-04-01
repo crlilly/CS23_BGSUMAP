@@ -40,6 +40,7 @@ dependencies:
   json_serializable: ^6.6.1
   json_annotation: ^4.8.0
   html: ^0.14.0+3
+  firebase_core: ^2.9.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,21 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/locations.json
+    - assets/images/BTSU.jpg
+    - assets/images/Carillon_Hall.jpg
+    - assets/images/Central_Hall.jpg
+    - assets/images/East_Hall.jpg
+    - assets/images/Education_Building.jpg
+    - assets/images/Founders_Hall.jpg
+    - assets/images/Hayes_Hall.jpg
+    - assets/images/Kuhlin_Center.jpg
+    - assets/images/Maurer_Center.jpg
+    - assets/images/McFall_Center.jpg
+    - assets/images/Olscamp_Hall.jpg
+    - assets/images/Shatzel_Hall.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
