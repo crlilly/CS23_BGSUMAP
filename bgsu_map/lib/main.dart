@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp> {
           infoWindow: InfoWindow(
             title: building.name,
             snippet: building.address,
+            image: building.image,
           ),
         );
         _markers[building.name] = marker;
