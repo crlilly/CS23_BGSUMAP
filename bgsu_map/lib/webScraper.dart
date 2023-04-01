@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:html/parser.dart' as parser;
 import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'package:html/dom.dart';
 
-Future<List<String>> extractData() async {
+Future extractData() async {
   //form connection to webpage
   final response =
       await http.Client().get(Uri.parse('https://events.bgsu.edu/'));
@@ -11,6 +13,7 @@ Future<List<String>> extractData() async {
     //if connection is formed
     //get html; document from page
     var document = parser.parse(response.body);
+    List<Map<String, dynamic>> linkMap = [];
 
     var events = document
         .getElementsByClassName('content-wrapper')[0]
@@ -39,7 +42,15 @@ Future<List<String>> extractData() async {
           .getElementsByClassName('em-card_event-text')[0]
           .children[1]
           .innerHtml;
+
+      linkMap.add({
+        'title': eventTitle,
+        'date': eventDateTime,
+        'location': eventLoc,
+      });
     }
+
+    return json.encode(linkMap);
 
     try {} catch (e) {
       return ['', '', 'ERROR!'];
