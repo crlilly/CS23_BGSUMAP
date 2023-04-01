@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
       _markers.clear();
       for (final building in mapItems.buildings) {
         BitmapDescriptor.fromAssetImage(
-          ImageConfiguration(), '${building.image}'.then((value) => icon = value);
+          ImageConfiguration(), building.image).then((value) => icon = value);
         final marker = Marker(
           markerId: MarkerId(building.name),
           position: LatLng(building.lat, building.lng),
