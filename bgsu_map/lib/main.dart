@@ -1,6 +1,7 @@
 //import 'dart:html';
 
 import 'package:bgsu_map/data/services/service_locator.dart';
+import 'package:bgsu_map/webScraper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,12 +25,13 @@ class MyApp extends StatefulWidget {
 
   @override
   State<MyApp> createState() => _MyAppState();
-  
 }
 
 final _permissionService = getIt<PermissionService>();
 BitmapDescriptor icon = BitmapDescriptor.defaultMarker;
+
 class _MyAppState extends State<MyApp> {
+  final Future<dynamic> _events = extractData();
   final Map<String, Marker> _markers = {};
   Future<void> _onMapCreated(GoogleMapController controller) async {
     final mapItems = await locations.getEvents();
@@ -37,19 +39,19 @@ class _MyAppState extends State<MyApp> {
       _markers.clear();
       for (final building in mapItems.buildings) {
         BitmapDescriptor.fromAssetImage(
-          const ImageConfiguration(), building.image).then((value) => icon = value);
+                const ImageConfiguration(), building.image)
+            .then((value) => icon = value);
         final marker = Marker(
-          markerId: MarkerId(building.name),
-          position: LatLng(building.lat, building.lng),
-          icon: icon,
-          infoWindow: InfoWindow(
-            title: building.name,
-            snippet: building.address,
-          ), 
-          onTap: () {
-            Material(child: Image(image: AssetImage(building.image)));
-          }
-        );
+            markerId: MarkerId(building.name),
+            position: LatLng(building.lat, building.lng),
+            icon: icon,
+            infoWindow: InfoWindow(
+              title: building.name,
+              snippet: building.address,
+            ),
+            onTap: () {
+              Material(child: Image(image: AssetImage(building.image)));
+            });
         _markers[building.name] = marker;
       }
     });
@@ -64,14 +66,17 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Falcon Finder', style: TextStyle(fontFamily: 'Alkatra'),),
+          title: const Text(
+            'Falcon Finder',
+            style: TextStyle(fontFamily: 'Alkatra'),
+          ),
           elevation: 2,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(25),
               bottomRight: Radius.circular(25),
+            ),
           ),
-        ),
           backgroundColor: Colors.orange,
         ),
         body: GoogleMap(
