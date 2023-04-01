@@ -21,7 +21,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    extractData();
     return MaterialApp(
       theme: ThemeData(
         useMaterial3: true,
