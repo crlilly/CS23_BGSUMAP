@@ -12,7 +12,14 @@
             {"address": "Houses english and american culture studies", "id": "east", "image": "assets/images/East_Hall.jpg", "lat": 41.376247, "lng": -83.636846, "name": "East Hall", "phone": "", "region": "north-america"},
             {"address": "Home to the administrative offices for college of arts and sciences", "id": "central", "image": "assets/images/Central_Hall.jpg", "lat": 41.376795, "lng": -83.637400, "name": "Central Hall", "phone": "", "region": "north-america"},
             {"address": "Houses college of education and human development", "id": "education", "image": "assets/images/Education_Building.jpg", "lat": 41.376763, "lng": -83.638251, "name": "Education Building", "phone": "", "region": "north-america"},
-            {"address": "Large event hall hosting many classes and events", "id": "olscamp", "image": "assets/images/Olscamp_Hall.jpg", "lat": 41.377968, "lng": -83.637480, "name": "Olscamp Hall", "phone": "", "region": "north-america"}
+            {"address": "Sat, Apr 15, 2023 12:30pm", "id": "btsuEvent1", "image": "", "lat": 41.377460, "lng": -83.642560, "name": "2023 Black Graduation", "phone": "", "region": "north-america"},
+            {"address": "Sat, Apr 1, 2023", "id": "HayesEvent1", "image": "", "lat": 41.377929, "lng": -83.639982, "name": "New student housing giveaway", "phone": "", "region": "north-america"},
+            {"address": "Thu, Apr 6, 2023 6pm to 7:15pm", "id": "olscampEvent1", "image": "", "lat": 41.377971, "lng": -83.637475, "name": "Beta Alpha Psi Meeting", "phone": "", "region": "north-america"},
+            {"address": "Wed, Apr 12, 2023 6pm to 7pm", "id": "MaurerEvent1", "image": "", "lat": 41.375666, "lng": -83.639152, "name": "Financial Management Society Meeting", "phone": "", "region": "north-america"},
+            {"address": "Thu, Mar 2, 2023 5:30pm to 7pm", "id": "CentralEvent1", "image": "", "lat": 41.376799, "lng": -83.638256, "name": "Teach My People Series: How To Sew", "phone": "", "region": "north-america"},
+            {"address": "Fri, Mar 3, 2023 5pm to 6pm", "id": "EducationBuildingEvent1", "image": "", "lat": 41.376768, "lng": -83.638244, "name": "Bible Study", "phone": "", "region": "north-america"},
+            {"address": "Fri, Mar 31, 2023 6:00pm to Sat, Apr 1, 2023 2:00pm", "id": "HayesEvent2", "image": "", "lat": 41.377921, "lng": -83.639975, "name": "BGSU ACM 2023 Hackathon", "phone": "", "region": "north-america"},
+            {"address": "Sat, Apr 1, 2023 11am to 1pm", "id": "BTSUEvent2", "image": "", "lat": 41.377449, "lng": -83.642551, "name": "USG Pancreatic Cancer 5k Fundraiser", "phone": "", "region": "north-america"}
         ],
     "regions": 
         [
