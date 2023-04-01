@@ -29,6 +29,16 @@ Future<List<String>> extractData() async {
           .getElementsByClassName('em-card_title')[0]
           .getElementsByTagName('a')[0]
           .innerHtml;
+
+      eventDateTime = event.children[1]
+          .getElementsByClassName('em-card_event-text')[0]
+          .children[0]
+          .innerHtml;
+
+      eventLoc = event.children[1]
+          .getElementsByClassName('em-card_event-text')[0]
+          .children[1]
+          .innerHtml;
     }
 
     try {} catch (e) {
