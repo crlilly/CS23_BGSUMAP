@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Falcon Finder'),
+          title: const Text('Falcon Finder', style: TextStyle(fontFamily: 'Alkatra'),),
           elevation: 2,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(

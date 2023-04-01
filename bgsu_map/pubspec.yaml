@@ -80,6 +80,11 @@ flutter:
     - assets/images/Olscamp_Hall.jpg
     - assets/images/Shatzel_Hall.jpg
 
+  fonts:
+    - family: Alkatra
+      fonts:
+        - asset: Alkatra-Regular.ttf
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
