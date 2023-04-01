@@ -57,6 +57,12 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Bowling Green State University Buildings'),
           elevation: 2,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+          ),
+        ),
         ),
         body: GoogleMap(
           onMapCreated: _onMapCreated,
